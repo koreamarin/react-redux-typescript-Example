@@ -8,7 +8,7 @@ const initialState: CounterState = { count: 0 };
 
 // createSlice를 사용하여 리듀서, 액션 생성 함수를 한 번에 생성
 const counterSlice = createSlice({
-  name: "aa",
+  name: "counter",
   initialState,
   reducers: {
     increase: (state) => {

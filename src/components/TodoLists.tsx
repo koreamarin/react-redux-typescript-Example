@@ -8,7 +8,7 @@ type TodoItemProps = {
 };
 
 //스타일 따로 뺄려고 함수 만듬
-function TodoItem({ todo, onToggle, onRemove }: TodoItemProps) {
+const TodoItem = ({ todo, onToggle, onRemove }: TodoItemProps) => {
   const removeStyle: React.CSSProperties = {
     textDecoration: todo.isDone ? "line-through" : "none",
   };
@@ -25,6 +25,8 @@ function TodoItem({ todo, onToggle, onRemove }: TodoItemProps) {
     </li>
   );
 }
+
+
 type TodoListProps = {
   todos: Todo[];
   onToggle: (id: number) => void;
